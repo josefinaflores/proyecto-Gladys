@@ -1,0 +1,116 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;
+}
+
+/* Header */
+header {
+    background-color: #454dec;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+/* Contenedor principal */
+#boxprductos {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Más grande */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Producto */
+#boxproducto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 30px; /* Más espacio */
+    transition: transform 0.3s ease;
+}
+
+#boxproducto:hover {
+    transform: translateY(-10px);
+}
+
+/* Texto */
+#boxproducto h3 {
+    font-size: 24px; /* Más grande */
+    margin-top: 15px;
+    color: #333;
+}
+
+#boxproducto p {
+    font-size: 22px; /* Más grande */
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Botón */
+#boxproducto button {
+    background-color: #454dec;
+    color: white;
+    padding: 15px 25px; /* Más grande */
+    font-size: 18px; /* Más grande */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#boxproducto button:hover {
+    background-color: #f39c12;
+}
+
+/* Imagen */
+img {
+    width: 100%;
+    height: 300px; /* Más alta */
+    object-fit: cover;
+    border-radius: 8px;
+}

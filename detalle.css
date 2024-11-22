@@ -1,0 +1,108 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 50px;
+}
+
+/* Header */
+header {
+    background-color: #454dec;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+
+#boxprducto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Imagenes de productos */
+#boxprducto img {
+    max-width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Nombre y precio de los productos */
+#boxprducto h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: #333;
+}
+
+#boxprducto p {
+    font-size: 18px;
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Botón de detalles */
+#boxprducto button {
+    background-color: #454dec;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#boxprducto button:hover {
+    background-color: #f39c12;
+}
+
+#contar {
+    display: flex; /* Organiza los elementos en una fila */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espacio entre los elementos */
+}
